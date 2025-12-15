@@ -1,0 +1,212 @@
+  body {
+            margin: 0;
+            padding: 0;
+            font-family: roboto, arial,helvetical;
+        }
+         
+  nav {
+            display: flex;
+            justify-content: space-between;
+            align-items:center ;
+            padding: 17px 10px;
+            gap: 10px;
+         }
+         .logo{
+            width: 50px;
+         }
+         .first-box {
+            flex:25%;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+         }
+         .second-box {
+            flex:50% ;
+            display: flex;
+            gap: 10px;
+         }
+         .last-box {
+            flex:25% ;
+            padding-left: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            justify-content: flex-end;
+            
+   
+         }
+         .search-box{
+            height: 40px;
+            text-indent:10px ;
+            width: 40vw;
+            display: flex;
+            border: 1px solid black;
+            border: 20px;
+          
+         }
+         .search {
+            width: 80%;
+            overflow: hidden;
+            padding: 15px;
+            border-bottom-left-radius: 20px;
+            border-top-left-radius: 20px;
+         }
+         .create-btn{
+            border-radius: 20px;
+            border: none;
+            font-weight: bold;
+            width: 100px;
+            height: 40px;
+            
+         }
+         .profile-pics{
+            width: 35px;
+            height:35px ;
+            border-radius: 50%;
+         }
+         .fa-solid.fa-plus{
+            margin-left: 10px;
+         }
+         .notification-btn {
+            border-radius: 50%;
+            height: 35px;
+            width: 35px;
+            border: none;
+            background:none  ;
+            position: relative;
+         }
+         .badge {
+            background-color: red;
+            color:white ;
+            padding: 1px 6px;
+            position: absolute;
+            top:0px ;
+            font-size: smaller;
+            left:14px ;
+            border-radius: 10px;
+
+         }
+         .notification-btn i {
+            font-size: large;
+         }
+          .notification-btn:hover{
+            background-color: #d3d3d3;
+          }
+          .mag-btn {
+            /* position: absolute;
+            right: 0.5px;
+            height: 40px;
+            width: 80px;
+            border-bottom-right-radius: 20px;
+            border-top-right-radius: 20px;
+            border: 1px solid black; */
+            overflow: hidden;
+            outline: none;
+            width:20% ;
+            border: 1px solid black;
+            border-bottom-right-radius: 20px;
+            border-top-right-radius: 20px;
+            height: 40px;
+            
+          }
+          .fa-solid.fa-magnifying-glass.fa-2x{
+            font-weight: 100px;
+          }
+          .mic-btn{
+            border-radius: 50%;
+            height: 40px;
+            width: 40px;
+            border: none;
+            padding: 10px;
+          }
+          .mag-btn:hover{
+               background-color: lightgrey;
+          }
+          .mic-btn:hover{
+               background-color: lightgrey;
+          }
+          .search:focus {
+            border: 1 px solid blue;
+
+          }
+          .video-card{
+            display: flex;
+            flex-direction: column;
+            width: 380px;
+            border-radius: 10px;
+            padding: 20px;
+            position: relative;
+            
+          }
+          .channel-pics {
+            width:50px ;
+            height:50px ;
+            border-radius:50% ;
+          }
+          .video-info {
+            display: flex;
+            gap: 10px;
+            margin-top: 12px;
+          }
+          .video-title{
+            margin: 0;
+          }
+          .video-sub {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+          }
+          .video-channel {
+            margin: 0;
+            font-size: 15px;
+            color: grey;
+          }
+          .video-section {
+            padding: 20px 10px;
+          }
+          .thumbnail{
+            border-radius: 12px;
+            width: 380px;
+          }
+          .video-stats{
+            font-size: 15px;
+            color: grey;
+          }
+          
+            
+          
+           .thumbnail:hover{
+             border-radius: 0px;
+           }
+           .video-card:hover{
+            background-color: rgb(236, 220, 220);
+            border-radius: 12px;
+           }
+           section {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+           }
+
+            
+          @media  (max-width:480px) {
+              .second-box   {
+                display: none;
+              }
+              .last-box {
+                display: none;
+              }
+               .video-section{
+                grid-template-columns: 1fr;
+               }
+          }
+  .timestamp {
+    background-color: black;
+    color: white;
+    width: 50px;
+    border: none;
+    position: absolute;
+    right: 35px;
+    bottom: 120px;
+    border-radius: 7px;
+  }
+          
